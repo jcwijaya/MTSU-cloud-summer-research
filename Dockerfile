@@ -8,6 +8,8 @@ USER root
 RUN apt-get update && \
     apt-get install -y \
     gromacs \
+    gromacs-mpich \
+    dnsutils \
     grace \
     && apt-get clean
 
